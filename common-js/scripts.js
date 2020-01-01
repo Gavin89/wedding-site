@@ -51,7 +51,7 @@ function countdownTime(){
 	
 	if(isExists('#clock')){
 		$('#clock').countdown('2021/04/01', function(event){
-			var $this = $(this).htmnotl(event.strftime(''
+			var $this = $(this).html(event.strftime(''
 				+ '<div class="time-sec"><span class="title">%D</span> days </div>'
 				+ '<div class="time-sec"><span class="title">%H</span> hours </div>'
 				+ '<div class="time-sec"><span class="title">%M</span> minutes </div>'
@@ -96,18 +96,144 @@ function isExists(elem){
 	return false;
 }
 
-
 function initMap() {
 
 	// Create a new StyledMapType object, passing it an array of styles,
 	// and the name to be displayed on the map type control.
+	var styledMapType = new google.maps.StyledMapType(
+	[
+		{
+			"featureType": "administrative",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": "-100"
+				}
+			]
+		},
+		{
+			"featureType": "administrative.province",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "off"
+				}
+			]
+		},
+		{
+			"featureType": "landscape",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": 65
+				},
+				{
+					"visibility": "on"
+				}
+			]
+		},
+		{
+			"featureType": "poi",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": -100
+				},
+				{
+					"lightness": "50"
+				},
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "road",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": "-100"
+				}
+			]
+		},
+		{
+			"featureType": "road.highway",
+			"elementType": "all",
+			"stylers": [
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "road.arterial",
+			"elementType": "all",
+			"stylers": [
+				{
+					"lightness": "30"
+				}
+			]
+		},
+		{
+			"featureType": "road.local",
+			"elementType": "all",
+			"stylers": [
+				{
+					"lightness": "40"
+				}
+			]
+		},
+		{
+			"featureType": "transit",
+			"elementType": "all",
+			"stylers": [
+				{
+					"saturation": -100
+				},
+				{
+					"visibility": "simplified"
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "geometry",
+			"stylers": [
+				{
+					"hue": "#ffff00"
+				},
+				{
+					"lightness": -25
+				},
+				{
+					"saturation": -97
+				}
+			]
+		},
+		{
+			"featureType": "water",
+			"elementType": "labels",
+			"stylers": [
+				{
+					"lightness": -25
+				},
+				{
+					"saturation": -100
+				}
+			]
+		}
+	],
+		{name: 'Styled Map'});
 
 	// Create a map object, and include the MapTypeId to add
 	// to the map type control.
 
-	var uluru = {lat: 52.640417, lng: -2.222506};
+	var uluru = {lat: 56.946285, lng: 24.105078};
     var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 15,
+		zoom: 4,
 		center: uluru
     });
 		
@@ -117,5 +243,7 @@ function initMap() {
 		map: map,
 		icon: image
 	});
-
+	//Associate the styled map with the MapTypeId and set it to display.
+	map.mapTypes.set('styled_map', styledMapType);
+	map.setMapTypeId('styled_map');
 }
