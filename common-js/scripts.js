@@ -96,11 +96,11 @@ function isExists(elem){
 	return false;
 }
 
+
 function initMap() {
 
 	// Create a new StyledMapType object, passing it an array of styles,
 	// and the name to be displayed on the map type control.
-
 
 	// Create a map object, and include the MapTypeId to add
 	// to the map type control.
@@ -118,5 +118,6 @@ function initMap() {
 		icon: image
 	});
 	//Associate the styled map with the MapTypeId and set it to display.
+	map.mapTypes.set('styled_map', styledMapType);
+	map.setMapTypeId('styled_map');
 }
-
