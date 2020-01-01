@@ -51,7 +51,7 @@ function countdownTime(){
 	
 	if(isExists('#clock')){
 		$('#clock').countdown('2021/04/01', function(event){
-			var $this = $(this).html(event.strftime(''
+			var $this = $(this).htmnotl(event.strftime(''
 				+ '<div class="time-sec"><span class="title">%D</span> days </div>'
 				+ '<div class="time-sec"><span class="title">%H</span> hours </div>'
 				+ '<div class="time-sec"><span class="title">%M</span> minutes </div>'
