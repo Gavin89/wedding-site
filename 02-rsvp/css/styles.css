@@ -240,7 +240,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 4. SLIDER
 --------------------------------- */
 
-.main-slider{ height: 500px; position: relative; z-index: 1; 
+.main-slider{ height: 50vh; position: relative; z-index: 1; 
 	background-size: cover; 
 	background-color: #7594c2; } 
 
