@@ -94,12 +94,17 @@
 	.menu-nav-icon{ display: inline-block; float: right; }
 
 	
-	
 	/* ---------------------------------
-	5. CONTACT AREA
+	5. CONTENT AREA
 	--------------------------------- */
 
-	.contact-area .display-table{ display: block; }
+	.regular-area{ padding: 0 0 50px 0; margin-top: -50px; }
+
+	.regular-area .content{ padding: 20px 30px; }
+	
+	.content .quoto-area{ padding-left: 30px; }
+	
+	.content .img-wrapper{ margin: 30px 0 0; }
 	
 	
 	/* ---------------------------------
@@ -121,6 +126,9 @@
 	--------------------------------- */
 
 	body{ font-size: 14px;  }
+	
+
+
 
 }
 
