@@ -50,7 +50,7 @@ p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #555; }
 h1{ font-size: 5.5em; line-height: 1; }
 h2{ font-size: 3em; line-height: 1.1; }
 h3{ font-size: 2.5em; }
-h4{ font-size: 1.5em; color: #7594c2}
+h4{ font-size: 1.5em; color: #7594c2; font-weight: bold}
 h5{ font-size: 1.2em; }
 h6{ font-size: .9em; letter-spacing: 1px; }
 
