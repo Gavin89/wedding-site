@@ -53,7 +53,7 @@ h3{ font-size: 2.5em; }
 h4{ font-size: 1.5em; color: #7594c2; font-weight: bold}
 h5{ font-size: 1.2em; }
 h6{ font-size: .9em; letter-spacing: 1px; }
-h7{ font-size: 3em; color: #7594c2; font-weight: bold; font-family: 'Playball', cursive;}
+h7{ font-size: 1.5em; color: #7594c2; font-weight: bold; font-family: 'Playball', cursive;}
 
 a, button{ display: inline-block; text-decoration: none; color: inherit; transition: all .3s; line-height: 1; }
 
