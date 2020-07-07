@@ -259,7 +259,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 
 .regular-area .content{ padding: 40px 70px; box-shadow: 2px 10px 20px rgba(0,0,0,.2); background: #fff; }
 
-.content .margin-top-btm{ margin: 20px 0; }
+.content .margin-top-btm{ margin: 20px 0; color: #7594c2}
 
 .content .img-wrapper{ margin: 30px 0; }
 
