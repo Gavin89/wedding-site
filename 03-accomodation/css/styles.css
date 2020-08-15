@@ -50,10 +50,10 @@ p{ line-height: 1.6; font-size: 1.05em; font-weight: 400; color: #555; }
 h1{ font-size: 5.5em; line-height: 1; }
 h2{ font-size: 3em; line-height: 1.1; }
 h3{ font-size: 2.5em; }
-h4{ font-size: 1.5em; color: #7594c2; font-weight: bold}
+h4{ font-size: 1.5em; color: #a1b2cb; font-weight: bold}
 h5{ font-size: 1.2em; }
 h6{ font-size: .9em; letter-spacing: 1px; }
-h7{ font-size: 1.5em; color: #7594c2; font-weight: bold; font-family: 'Playball', cursive;}
+h7{ font-size: 1.5em; color: #a1b2cb; font-weight: bold; font-family: 'Playball', cursive;}
 
 a, button{ display: inline-block; text-decoration: none; color: inherit; transition: all .3s; line-height: 1; }
 
@@ -240,8 +240,8 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 4. SLIDER
 --------------------------------- */
 
-.main-slider{ height: 50vh; position: relative; z-index: 1; 
-	background-color: #7594c2; background-size: cover; color: #fff; } 
+.main-slider{ height: 50vh; position: relative;
+	background-color: #a1b2cb; background-size: cover; color: #fff; } 
 
 .main-slider:after{ content:''; position: absolute; top: 0; bottom: 0; left: 0; right: 0; 
 	z-index: -1; background: rgba(0,0,0,.3); }
