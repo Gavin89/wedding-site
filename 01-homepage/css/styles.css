@@ -276,7 +276,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu{ display: block;
 6. REMAINING TIME
 --------------------------------- */
 
-.counter-area{ position: relative; z-index: 1; 
+.counter-area{ position: relative;
 	background-color: #a1b2cb;
 	background-size: cover;}
 
