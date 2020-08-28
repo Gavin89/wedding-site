@@ -44,6 +44,9 @@
 .icon-email-plane:before {
   content: "\63";
 }
+.icon-time:before {
+  content: "\f017";
+}
 .icon-cake:before {
   content: "\62";
 }
