@@ -134,6 +134,18 @@
 										<option value="4">Unable to Attend</option>
 									</select>
 								</div>
+								<div class="col-sm-6 margin-bottom">
+									<label>Dietry Requirements</label>
+									<select class="event-select" name="dietry">
+										<option value="1"><span>None</span></option>
+										<option value="2">Vegetarian</option>
+										<option value="3">Vegan</option>
+									</select>
+								</div>
+								<div class="col-sm-12 margin-bottom">
+									<label>Allergies</label>
+									<input class="name-input" name="allergies" type="text" placeholder="nuts, egg, fish, etc...">
+								</div>
 								<div class="col-sm-12 center-text">
 									<!-- <button class="btn" id="js_send"><b>I AM ATTENDING</b></button> -->
 									<input type="submit" id="js_send" value="Send" />
@@ -415,7 +427,7 @@
 			};
 
 			var subject = "www.thehardyswedding.com"
-			var message = "Contact: " + document.querySelector("#" + form_id_js + " [name='subject']").value + " Email: " + document.querySelector("#" + form_id_js + " [name='text']").value + " Guests: " + document.querySelector("#" + form_id_js + " [name='option']").value + " Event: " + document.querySelector("#" + form_id_js + " [name='event']").value
+			var message = "Contact: " + document.querySelector("#" + form_id_js + " [name='subject']").value + " Email: " + document.querySelector("#" + form_id_js + " [name='text']").value + " Guests: " + document.querySelector("#" + form_id_js + " [name='option']").value + " Event: " + document.querySelector("#" + form_id_js + " [name='event']").value + " Dietry: " + document.querySelector("#" + form_id_js + " [name='dietry']").value + " Allergies: " + document.querySelector("#" + form_id_js + " [name='allergies']").value
 
 			data_js['subject'] = subject;
 			data_js['text'] = message;
